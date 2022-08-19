@@ -36,32 +36,32 @@
             <label for="cat">Выберите породу:</label>
             <select id="cat" name="breed" required>
                 <option value="">Порода</option>
-                <option value="1">Метис</option>
-                <option value="2">Персидская</option>
-                <option value="3">Сиамская</option>
-                <option value="4">Мэй-кун</option>
-                <option value="5">Британская</option>
-                <option value="6">Сибирская</option>
-                <option value="7">Абиссинская</option>
-                <option value="8">Азиатская</option>
-                <option value="9">Норвежская лесная</option>
-                <option value="10">Сфинкс</option>
+                <option value="Метис">Метис</option>
+                <option value="Персидская">Персидская</option>
+                <option value="Сиамская">Сиамская</option>
+                <option value="Мэй-кун">Мэй-кун</option>
+                <option value="Британская">Британская</option>
+                <option value="Сибирская">Сибирская</option>
+                <option value="Абиссинская">Абиссинская</option>
+                <option value="Азиатская">Азиатская</option>
+                <option value="Норвежская лесная">Норвежская лесная</option>
+                <option value="Сфинкс">Сфинкс</option>
             </select>*
         </div>
         <div>
             <p>Чем питается:</p>
-            <input checked id="food1" type="checkbox" name="1" value="Dry" />
+            <input class="checkbox" checked id="food1" type="checkbox" name="1" value="Dry" />
             <label for="food1">Сухой корм</label> <br />
-            <input id="food2" type="checkbox" name="2" value="Wet" />
+            <input class="checkbox" id="food2" type="checkbox" name="2" value="Wet" />
             <label for="food2">Влажный корм</label><br />
-            <input id="food3" type="checkbox" name="3" value="Natural">
+            <input class="checkbox" id="food3" type="checkbox" name="3" value="Natural">
             <label for="food3">Натуральный корм</label><br />
         </div>
         <div>
             <p>Пол питомца</p>
-            <input checked type="radio" name="sex" id="sex1" value="female" />
+            <input class="radio" type="radio" name="sex" id="sex1" value="female" />
             <label for="sex1">Самка</label><br />
-            <input type="radio" name="sex" id="sex2" value="male" />
+            <input class="radio" checked type="radio" name="sex" id="sex2" value="male" />
             <label for="sex2">Самец</label><br /><br />
         </div>
         <div>
@@ -72,9 +72,12 @@
             <p>Приложить фото</p>
             <input type="file">
         </div><br />
-        <div><button>Сохранить</button></div>
+        <div>
+            <button onclick="createKotik()">Сохранить</button>
+        </div>
         <p>Поля, отмеченные звёздочкой (*), являются обязательными для заполнения.</p>
     </form>
+    <script src="forms2.js"></script>
 </body>
 
 </html>
